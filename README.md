@@ -66,7 +66,7 @@ git pull
 ls -1
 ```
 На рисунке 6 представлены файлы репозитория до и после добавления нового файла.
-<p align="center"><img src="screenshots/6.png"></p>
+<p align="center"><img src="screenshots/6.jpg"></p>
 <p align="center">Рисунок 6 - Установка изменений в локальном репозитории</p>
 
 ### 7. Получение истории операций для каждой из веток
@@ -79,9 +79,9 @@ git log (название ветки)
 git checkout (название ветки)
 ```
 История операций для имеющихся веток master (рис. 7) и branch1 (рис. 8).
-<p align="center"><img src="screenshots/7.png"></p>
+<p align="center"><img src="screenshots/7.jpg"></p>
 <p align="center">Рисунок 7 - История операций ветки master</p>
-<p align="center"><img src="screenshots/8.png"></p>
+<p align="center"><img src="screenshots/8.jpg"></p>
 <p align="center">Рисунок 8 - История операций ветки branch1</p>
 
 ### 8. Просмотр последних изменений 
@@ -90,7 +90,7 @@ git checkout (название ветки)
 git show (название ветки)
 ```
 Результаты ипользования данной команды для ветки master представленны на рисунке 9
-<p align="center"><img src="screenshots/9.png"></p>
+<p align="center"><img src="screenshots/9.jpg"></p>
 <p align="center">Рисунок 9 - Последние изменений ветки master</p>
 ### 9. Слияние с разрешением конфликта
 Чтобы слить ветки, необходимо войти в ту ветку, в которую будет происходить слияние, и воспользоваться командой:
@@ -98,11 +98,11 @@ git show (название ветки)
 git merge (название ветки, которую нужно слить)
 ```
 При попытке слить ветку branch1 с веткой master произошёл конфликт (рис. 10).
-<p align="center"><img src="screenshots/10.png"></p>
+<p align="center"><img src="screenshots/10.jpg"></p>
 <p align="center">Рисунок 10 - Конфликт</p>
 
 Для решения конфликта файл был отредактирован в графическом редакторе (рис. 11).
-<p align="center"><img src="screenshots/11.png"></p>
+<p align="center"><img src="screenshots/11.jpg"></p>
 <p align="center">Рисунок 11 - Редактирование файла</p>
 
 После того как конфликт разрешён, полученный файл необходимо зафиксировать. Для этого сначала добавляем его в индекс с помощью команды:
@@ -121,7 +121,7 @@ git commit -m "(Комментарий)"
 ```
 git push
 ```
-<p align="center"><img src="screenshots/12.png"></p>
+<p align="center"><img src="screenshots/12.jpg"></p>
 <p align="center">Рисунок 12 - Завершение слияния веток</p>
 
 ### 10. Удаление побочной ветки
@@ -134,7 +134,7 @@ git branch -d (Название ветки)
 ```
 git push origin --delete (Название ветки)
 ```
-<p align="center"><img src="screenshots/13.png"></p>
+<p align="center"><img src="screenshots/13.jpg"></p>
 <p align="center">Рисунок 13 - Удаление ветки branch1</p>
 
 ### 11. Создание изменений и их фиксация
@@ -143,9 +143,9 @@ git push origin --delete (Название ветки)
 echo "(Новое содержание файла)" > (Название файла)
 ```
 Было создано и добавлено в удалённый репозиторий 2 файла (рис. 14-15).
-<p align="center"><img src="screenshots/14.png"></p>
+<p align="center"><img src="screenshots/14.jpg"></p>
 <p align="center">Рисунок 14 - Добавление file1</p>
-<p align="center"><img src="screenshots/15.png"></p>
+<p align="center"><img src="screenshots/15.jpg"></p>
 <p align="center">Рисунок 15 - Добавление file2</p>
 
 ### 12. Создание отката коммита 
@@ -154,9 +154,9 @@ echo "(Новое содержание файла)" > (Название файл
 git reset HEAD~1
 ```
 Ниже видна история коммитов до команды (рис. 16) и после (рис. 17).
-<p align="center"><img src="screenshots/16.png"></p>
+<p align="center"><img src="screenshots/16.jpg"></p>
 <p align="center">Рисунок 16 - История коммитов до отката</p>
-<p align="center"><img src="screenshots/17.png"></p>
+<p align="center"><img src="screenshots/17.jpg"></p>
 <p align="center">Рисунок 17 - История коммитов после отката file2</p>
 
 ### 13. Создание ветки для отчёта
@@ -169,12 +169,12 @@ git branch (Название новой ветки)
 git push origin (Название новой ветки)
 ```
 Была создана ветка report для написания в ней отчёта (рис. 18).
-<p align="center"><img src="screenshots/18.png"></p>
+<p align="center"><img src="screenshots/18.jpg"></p>
 <p align="center">Рисунок 18 - Создание ветки для отчёта</p>
 
 ### 14. Написание отчёта
 Отчёт был написан в тектовом редакторе с последующим копированием в файл README.md в ветке report (рис. 19).
-<p align="center"><img src="screenshots/19.png"></p>
+<p align="center"><img src="screenshots/19.jpg"></p>
 <p align="center">Рисунок 19 - Написание в отчёте строк о написании отчёта</p>
 
 ### 15. История операций
@@ -182,7 +182,7 @@ git push origin (Название новой ветки)
 ```
 git log --date=format:'%D' --pretty=format:"%h -> %cd, %cn ( %s )"
 ```
-<p align="center"><img src="screenshots/20.png"></p>
+<p align="center"><img src="screenshots/20.jpg"></p>
 <p align="center">Рисунок 20 - История операций</p>
 
 ### 16. Отправка локальных изменений в сетевое хранилище
