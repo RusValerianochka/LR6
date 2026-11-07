@@ -190,6 +190,7 @@ git log --date=format:'%D' --pretty=format:"%h -> %cd, %cn ( %s )"
 Все изменения были скопированны в удалённый репозиторий
 
 ## Лог команд
+```
 git config --global user.name "4514 Таскаев Р.Р."
 
 git config --global user.email "RusValerinochka@gmail.com"
@@ -257,5 +258,6 @@ git branch report
 git branch
 
 git push origin report
+```
 ## Вывод
 В ходе выполнения лабораторной работы были изучены базовые возможностей системы управления версиями, получен опыт работы с Git Api, опыт работы с локальным и удаленным репозиторием.
